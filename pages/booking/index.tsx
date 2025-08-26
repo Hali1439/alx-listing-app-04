@@ -1,3 +1,4 @@
+// pages/booking.tsx
 import BookingForm from "@/components/booking/BookingForm";
 import OrderSummary from "@/components/booking/OrderSummary";
 
@@ -12,11 +13,10 @@ export default function BookingPage() {
 
   return (
     <div className="container mx-auto p-6">
-      <div className="grid grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <BookingForm />
         <OrderSummary bookingDetails={bookingDetails} />
       </div>
     </div>
   );
 }
-
